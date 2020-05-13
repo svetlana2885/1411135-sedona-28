@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Кузнецова Светлана](https://up.htmlacademy.ru/htmlcss/28/user/1411135).
-* Наставник: [Наталья Рыжова].(https://htmlacademy.ru/profile/id418965)
+* Наставник: [Наталья Рыжова] (https://htmlacademy.ru/profile/id418965)
 
 ---
 
