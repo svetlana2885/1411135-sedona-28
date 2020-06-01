@@ -1,128 +1,138 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Sedona</title>
-  </head>
+<html class="page" lang="ru">
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Sedona</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  <header>
-    <nav>
-      <a>
-        <img src="./img/logo.png" width="100" height="100" alt="logo">
+<body class="page-body">
+
+  <header class="main-header">
+    
+    <div class="main-header-logo">
+      <a href="#">
+        <img src="./img/logo.png" alt="logo">
       </a>
-      <ul>
-        <li><a href="">Информация</a></li>
-        <li><a href="">фото и видео</a></li>
-        <li><a href="">карта штата</a></li>
-        <li><a href="inner.html">гостиницы</a></li>
-      </ul>
-    </nav>
-  <img src="./img/backgroundphoto.jpg">
-  <img src="./img/welcome.png" width="300" height="200" alt="welcome">
+    </div>
 
+    <ul class="site-navigation">
+      <li><a href="">Информация</a></li>
+      <li><a href="">фото и видео</a></li>
+      <li class="site-navigation__center">
+
+      </li>
+      <li><a href="">карта штата</a></li>
+      <li><a href="inner.html">гостиницы</a></li>
+    </ul>
   </header>
-  <main>
-    <h1> SEDONA</h1>
+  <div class="site-preview">
+    <img src="./img/backgroundphoto.jpg">
+    <img class="sedona-text" src="./img/welcome.png" alt="welcome">
+  </div>
+  <main class="conteiner">
     <p>
       Седона - небольшой городок в Аризоне,заслуживающий большего.
     </p>
-    <section>
-      <h2>Преимущества</h2>
-      <p>
-        Рассмотрим 5 причин, по которым Седона круче,чем гранд каньон!
-      </p>
-      <p>Настоящий городок -№1- Седона не акракцион для туристов, там течет своя жизнь
-        <img src="./img/image.jpg">
-      </p>
-      <p> 
-        <img src="./img/house.svg" width="40" height="40">
-        <h2> жилье </h2>
-        рекомендуем пожить в настоящем мотеле, все как в кино! 
-      </p>
-      <p> 
-        <img src="./img/sandwich.svg" width="40" height="40">
-        <h2> еда </h2>
-        всегда заказывайте фирменный бургер, вы не разочаруетесь!
-      </p>
-      <p>
-        <img src="./img/present.svg" width="40" height="40">
-        <h2> сувениры </h2>
-        не только китайского, но и местного производства!
-      </p>
-      <p>
-         там есть мост дьявола -№2- да, по нему можно пройти! если конечно вы осмелитесь
-        <img src="./img/image2.jpg"> 
-      </p>
-      <p>
-        <h2> небольшая площадь </h2>
-        -№3- все достопримечательности находятся очень близко
-        <h2> красивая дорога</h2>
-        -№4- ехать в седону из лас-вегаса совсем не скучно
-        <h2> мало туристов </h2>
-        -№5- большинство едет в гранд каньон и толпится там 
-      </p>
+    <section class="features">
+      <h2 class="visually-hidden"> Рассмотрим 5 причин, по которым Седона круче,чем гранд каньон!</h2>
+    </main>
+      <div>Настоящий городок -№1- Седона не акракцион для туристов, там течет своя жизнь<div>
+          <div> <img src="./img/image.jpg">
+            <div>
+
+              <div class="feature-item">
+                <img src="./img/house.svg" width="40" height="40">
+                <h2> жилье </h2>
+                рекомендуем пожить в настоящем мотеле, все как в кино!
+              </div>
+              <div class="feature-item">
+                <img src="./img/sandwich.svg" width="40" height="40">
+                <h2> еда </h2>
+                всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              </div>
+              <div class="feature-item">
+                <img src="./img/present.svg" width="40" height="40">
+                <h2> сувениры </h2>
+                не только китайского, но и местного производства!
+              </div>
+              <div>
+                там есть мост дьявола -№2- да, по нему можно пройти! если конечно вы осмелитесь</div>
+              <div> <img src="./img/image2.jpg"> </div>
+
+              <div class="feature-item">
+                <h2> небольшая площадь </h2>
+                <p> -№3- все достопримечательности находятся очень близко</p>
+                <h2> красивая дорога</h2>
+                -№4- ехать в седону из лас-вегаса совсем не скучно
+                <h2> мало туристов </h2>
+                -№5- большинство едет в гранд каньон и толпится там
+              </div>
     </section>
     <section>
-     <h2>заинтерисовались?</h2>
-        укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинец в седоне
-      </section>
+      <h2>заинтерисовались?</h2>
+      укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинец в седоне
+    </section>
     <section>
       <h2>Поиск гостиницы в Седоне</h2>
       <img src="./img/calendar.svg" width="20" height="20" alt="календарь">
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
-        <label for="appointment-date">дата заезда</label>
-        <input id="appointment-date" type="text" name="date" placeholder="01.01.2000">
-      </p>
-      <p>
-        <label for="appointment-date">дата выезда</label>
-        <input id="appointment-date" type="text" name="date" placeholder="01.01.2000">
-      </p>
-      <p>
-      <label for="appointment-number">взрослые</label>
-      <input id="appointment-number" type="text" name="number" placeholder="0">
-    </p>
-    <p>
-      <label for="appointment-number">дети</label>
-      <input id="appointment-number" type="text" name="number" placeholder="0">
-    </p>
-    <button type="submit">найти</button> 
+          <label for="appointment-date">дата заезда</label>
+          <input id="appointment-date" type="text" name="date" placeholder="01.01.2000">
+        </p>
+        <p>
+          <label for="appointment-date">дата выезда</label>
+          <input id="appointment-date" type="text" name="date" placeholder="01.01.2000">
+        </p>
+        <p>
+          <label for="appointment-number">взрослые</label>
+          <input id="appointment-number" type="text" name="number" placeholder="0">
+        </p>
+        <p>
+          <label for="appointment-number">дети</label>
+          <input id="appointment-number" type="text" name="number" placeholder="0">
+        </p>
+        <button type="submit">найти</button>
       </form>
     </section>
-      
-  </main>
-  <footer>
-  </section>
-  <section>
-    <h1>Контактная информация</h1>
-    <p>#VISITSEDONA</p> 
-  
-    <a href= "tel:+74956660166">+7(495) 666-01-66    
-  </section>
-  <section>
-    <ul>
-      <li>
-        <a href="#">
-        <img src="./img/twitter.svg" width="18" height="18" alt="twitter"></a>
-      </li>
-      <li>   
-        <a href="#">
-        <img src="./img/fb-icon.svg" width="18" height="18" alt="fb"></a>
-      </li>
-      <li>
-        <a href="#">
-      <img src="./img/youtube.svg" width="18" height="18" alt="youtube"></a>
-      </li>
-    </ul>
-    <p>
-      <img src="./img/website.svg" width="40" height="20">
-      <img src="./img/logo-htmlacademy.svg" width="60" height="20">
-    </p>
-  </section>
 
+
+  <footer class=" page-footer main-footer">
+    <div class="container">
+      <section class="footer-contacts">
+      <p>
+        #VISITSEDONA
+    <a href="tel:+74956660166">+7(495) 666-01-66</a>
+      </p>
+    </section>
+
+    <section class="footer-social">
+      <ul class="list">
+        <li>
+          <a class="social-button" href="#">
+            <img src="./img/twitter.svg" width="20" height="16" alt="twitter">
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <img src="./img/fb-icon.svg" width="12" height="22" alt="fb"></a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <img src="./img/youtube.svg" width="20" height="16" alt="youtube"></a>
+        </li>
+      </ul>
+    </section>
+       <p class="footer-copyright">
+        <img src="./img/website.svg" width="40" height="20">
+        <img src="./img/logo-htmlacademy.svg" width="60" height="20">
+      </p>
   </footer>
 
-  </body>
+</body>
+
 </html>
