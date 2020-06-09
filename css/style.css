@@ -1,4 +1,5 @@
 :root {
+  --basic-grey: #EEEEEE;
   --basic-black: black;
   --basic-white: #ffffff;
   --basic-extra-dark: grey;
@@ -7,13 +8,13 @@
   --basic-surep-dark: #5496bd;
 }
 body {
-  min-width: 960;
+  min-width: 100%;
   margin: 0;
   padding: 0;
   font-family: PT Sans;
   font-size: 14px;
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: var(--basic-grey);
 }
 
 a {
@@ -96,15 +97,147 @@ img {
     width: 38%;
 }
 
-.feature-item {
+.pic {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+}
+.conteiner {
+  
   text-align: center;
+  background-color: var(--basic-white);
+}
+.title {
+  width: 470px;
+  height: 80px;
+ margin: 0 auto;
+ font-family: PT Sans;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 21px;
+}
+
+.visually-hidden {
+ padding: 10px;
+ font-family: PT Sans;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 14px;
+ line-height: 26px;
+}
+
+.features {
+ margin: 0;
+ padding: 0;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.feature-item {
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  text-align: center;
+  outline: 5px solid #ca07594d;
+  outline-offset: -5px;
+}
+
+.feature-item p {
+  margin: 0 10px;
 }
 .feature-item h2 {
   font-size: 21px;
   line-height: 21px;
 }
+.subtitle {
+  display: flex;
+  column-gap: 20px;
+  outline: 5px solid #ca07594d;
+  outline-offset: -5px;
+}
+
+.appointment {
+  position: relative;
+}
+
+.appointment_header {
+  padding: 58px 0 80px;
+  background-color: var(--basic-white); 
+  text-align: center;
+}
+.caption {
+  margin: 0 auto;
+  color: var(--basic-white);
+  text-align: center;
+  background: #766357
+}
+
+.appointment-info {
+  margin: 0 auto;
+  width: 45%;
+  margin-bottom: 15px;
+}
+.modal-form {
+  position: absolute;
+  left: 50%;
+  top: 195px;
+  width: 570px;
+  background-color: var(--basic-white);
+  margin-left:-285px;
+}
+
+.modal-form_header {
+  padding: 30px 0;
+}
+.modal-form_body {
+  padding: 55px;
+}
+
+.modal-form_button {
+  margin-top: 55px !important;
+  width: 100%;
+}
+
+.appointment-form {
+  position: relative;
+}
+
+.appointment-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.appointment-item:last-of-type {
+  margin-bottom: 0px;
+}
+
+.appointment-item label {
+  display: block;
+  text-align: left;
+  align-self: center;
+  width: 100px;
+}
+.appointment-item input {
+  flex-grow: 1;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  font: inherit;
+  border: none;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+}
+
+.button {
+  display: block;
+  padding:16px 0;
+  text-align: center;
+  border: none;
+  background-color: var(--basic-blue);
+}
+
 .main-footer {
   padding: 0;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .footer-contacts { 
@@ -112,14 +245,30 @@ img {
 }
 
 .footer-social {
-  justify-self: center;
-  text-align: center;
+  margin: o;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
+.social-button {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--basic-blue);
+  color: inherit;
+}
+.img-botton {
+  margin: 0 auto;
+}
+
 .social-button :hover {
   background-color: var(--basic-blue);
 }
 .social-button :focus {
-  background-color: var(--basic-dark-blue);
+  background-color: var(--basic-blue);
 }
 .main-footer .container {
   display: flex;
@@ -127,14 +276,31 @@ img {
 
 }
 .footer-copyright {
-  text-align: center;
-  margin: 0;
-  justify-self: center;
+ display: flex;
+ align-items: center;
+}
+.footer-copyright:hover {
+  background-color: var(--basic-dark-blue);
 }
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.name {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+}
+.img_hotel {
+  width: 135px;
+  height: 90px;
 }
 
 .hotel1 {
@@ -150,5 +316,5 @@ img {
 .hotel3 {
  /* outline-offset: -5px;
   outline: 5px solid rgba(0, 0, 255, 0.7);*/
-  list-style: none;S
+  list-style: none;
 }

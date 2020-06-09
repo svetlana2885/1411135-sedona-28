@@ -32,104 +32,117 @@
   <div class="site-preview">
     <img src="./img/backgroundphoto.jpg">
     <img class="sedona-text" src="./img/welcome.png" alt="welcome">
+    <img class="pic" src="./img/shape.png" alt="form">
   </div>
   <main class="conteiner">
-    <p>
+    <p class="title">
       Седона - небольшой городок в Аризоне,заслуживающий большего.
     </p>
-    <section class="features">
-      <h2 class="visually-hidden"> Рассмотрим 5 причин, по которым Седона круче,чем гранд каньон!</h2>
+      <h2 class="visually-hidden"> Рассмотрим 5 причин, по которым Седона круче,чем гранд каньон!
+      </h2>
     </main>
-      <div>Настоящий городок -№1- Седона не акракцион для туристов, там течет своя жизнь<div>
-          <div> <img src="./img/image.jpg">
-            <div>
-
-              <div class="feature-item">
-                <img src="./img/house.svg" width="40" height="40">
+    <section class="features">
+      <div class="feature-item">
+        <h2> Настоящий городок -№1- Седона не акракцион для туристов, там течет своя жизнь </h2>
+       <img src="./img/image.jpg">
+          </div>
+    </section>
+    <section class="subtitle">
+                <img src="./img/house.svg">
                 <h2> жилье </h2>
-                рекомендуем пожить в настоящем мотеле, все как в кино!
-              </div>
+               <p> рекомендуем пожить в настоящем мотеле, все как в кино</p>
               <div class="feature-item">
-                <img src="./img/sandwich.svg" width="40" height="40">
+                <img src="./img/sandwich.svg">
                 <h2> еда </h2>
-                всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              <p>  всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </div>
               <div class="feature-item">
-                <img src="./img/present.svg" width="40" height="40">
+                <img src="./img/present.svg">
                 <h2> сувениры </h2>
                 не только китайского, но и местного производства!
               </div>
-              <div>
-                там есть мост дьявола -№2- да, по нему можно пройти! если конечно вы осмелитесь</div>
-              <div> <img src="./img/image2.jpg"> </div>
-
+            </section>
+              <div class="feature-item">
+                там есть мост дьявола -№2- да, по нему можно пройти! если конечно вы осмелитесь
+               <img src="./img/image2.jpg">
+               </div>
+   
               <div class="feature-item">
                 <h2> небольшая площадь </h2>
-                <p> -№3- все достопримечательности находятся очень близко</p>
+                <p>
+                   -№3- все достопримечательности находятся очень близко</p>
                 <h2> красивая дорога</h2>
-                -№4- ехать в седону из лас-вегаса совсем не скучно
+               <p>-№4-
+               ехать в седону из лас-вегаса совсем не скучно</p>
                 <h2> мало туристов </h2>
-                -№5- большинство едет в гранд каньон и толпится там
+               <p> -№5- 
+               большинство едет в гранд каньон и толпится там</p>
               </div>
     </section>
-    <section>
-      <h2>заинтерисовались?</h2>
-      укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинец в седоне
-    </section>
-    <section>
-      <h2>Поиск гостиницы в Седоне</h2>
-      <img src="./img/calendar.svg" width="20" height="20" alt="календарь">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="appointment-date">дата заезда</label>
-          <input id="appointment-date" type="text" name="date" placeholder="01.01.2000">
-        </p>
-        <p>
-          <label for="appointment-date">дата выезда</label>
-          <input id="appointment-date" type="text" name="date" placeholder="01.01.2000">
-        </p>
-        <p>
-          <label for="appointment-number">взрослые</label>
-          <input id="appointment-number" type="text" name="number" placeholder="0">
-        </p>
-        <p>
-          <label for="appointment-number">дети</label>
-          <input id="appointment-number" type="text" name="number" placeholder="0">
-        </p>
-        <button type="submit">найти</button>
-      </form>
-    </section>
+    <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
+      <div class="appointment_header">
+        <h2>заинтересовались?</h2>
+        <p class="appointment-info">укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      </div>
+      <img src="./img/map.jpg">
+         
+      <div class="modal-form">
+        <div class="modal-form_header caption">Поиск гостиницы в Седоне</div>
+        <div class="modal-form_body">
+            <div class="appointment-item">
+              <label for="appointment-chekin">дата заезда</label>
+              <input id="appointment-date" type="text" name="date" placeholder="01.01.2020">
+            </div>
+            <div class="appointment-item">
+              <label for="appointment-chekout">дата выезда</label>
+              <input id="appointment-time" type="text" name="date" placeholder="01.01.2020">
+            </div>
+            <div class="appointment-item">
+              <label for="appointment-name">взрослые</label>
+              <input class="cl" id="appointment-name" type="text" name="number" placeholder="0">
+            </div>
+            <div class="appointment-item">
+              <label for="appointment-name_chl">дети</label>
+              <input class="cl" id="appointment-phone" type="tel" name="number" placeholder="0">
+            </div>
+            <button class="modal-form_button button" type="submit">найти</button>
+      </div>
+    </form>
+      
+</div>
 
-
-  <footer class=" page-footer main-footer">
-    <div class="container">
-      <section class="footer-contacts">
-      <p>
-        #VISITSEDONA
-    <a href="tel:+74956660166">+7(495) 666-01-66</a>
-      </p>
-    </section>
-
-    <section class="footer-social">
-      <ul class="list">
-        <li>
+</main>
+        <footer class=" page-footer main-footer">
+          <div class="container">
+            <section class="footer-contacts">
+            <p>
+              #VISITSEDONA
+          <a href="tel:+74956660166">+7(495) 666-01-66</a>
+            </p>
+          </section>
+      
+          <section class="footer-social">
+            <ul class="list">
+              <li class="visually-hidden">
+                <a class="social-button" href="#">
+                  <img class="img-botton" src="./img/twitter1.svg" alt="twitter">
+                </a>
+              </li>
+              <li class="visually-hidden">
           <a class="social-button" href="#">
-            <img src="./img/twitter.svg" width="20" height="16" alt="twitter">
+            <img class="img-botton" src="./img/fb-icon1.svg"  alt="fb">
           </a>
         </li>
-        <li>
+        <li class= "visually-hidden">
           <a class="social-button" href="#">
-            <img src="./img/fb-icon.svg" width="12" height="22" alt="fb"></a>
-        </li>
-        <li>
-          <a class="social-button" href="#">
-            <img src="./img/youtube.svg" width="20" height="16" alt="youtube"></a>
+            <img class="img-botton" src="./img/youtube.svg"  alt="youtube">
+          </a>
         </li>
       </ul>
     </section>
        <p class="footer-copyright">
-        <img src="./img/website.svg" width="40" height="20">
-        <img src="./img/logo-htmlacademy.svg" width="60" height="20">
+        <img src="./img/website.svg">
+        <img src="./img/logo-htmlacademy.svg">
       </p>
   </footer>
 
