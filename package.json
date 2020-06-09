@@ -1,0 +1,32 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "lint:css": "stylelint 'src/**/*.css' --config stylelint.config.js",
+    "css:fix": "stylelint 'src/**/*.css' --config stylelint.config.js --fix",
+    "eslint": "eslint . --ext .js",
+    "eslint-fix": "eslint . --ext .js --quiet --fix",
+    "prettier:base": "prettier --config .prettierrc.js",
+    "prettier:write": "npm run prettier:base -e './node_modules/**/*' -- --write './**/*.{js,html}'",
+    "lint": "npm run lint:css",
+    "precommit": "npm run lint && npm run prettier:write"
+  },
+  "pre-commit": [
+    "prettier:write",
+    "lint",
+    "lint:css"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.0",
+    "stylelint-config-standard": "^20.0.0",
+    "typescript": "^3.9.5"
+  }
+}
