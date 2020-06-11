@@ -11,6 +11,15 @@
   width: 38%;
 }
 
+.link {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+}
+
 .pic {
   position: absolute;
   bottom: 0;
@@ -48,12 +57,9 @@
 }
 
 .feature-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   column-gap: 20px;
   text-align: center;
-  outline: 5px solid #ca07594d;
-  outline-offset: -5px;
 }
 
 .feature-item p {
@@ -127,7 +133,7 @@
 }
 
 .appointment-item:last-of-type {
-  margin-bottom: 0;
+  /* margin-bottom: 0;*/
 }
 
 .appointment-item label {
@@ -148,8 +154,26 @@
   background-color: #f2f2f2;
   box-sizing: border-box;
 }
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.cl {
+  width: 115px;
+  border: none;
+  background-color: #f2f2f2;
+}
+.chl_short {
+  width: 68px;
+}
 
 .button {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
   display: block;
   padding: 16px 0;
   text-align: center;

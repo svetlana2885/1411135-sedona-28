@@ -22,11 +22,11 @@
           </a>
         </div>
         <ul class="site-navigation">
-          <li><a href="">Информация</a></li>
-          <li><a href="">фото и видео</a></li>
+          <li><a class="link" href="">Информация</a></li>
+          <li><a class="link" href="">фото и видео</a></li>
           <li class="site-navigation__center"></li>
-          <li><a href="">карта штата</a></li>
-          <li><a href="inner.html">гостиницы</a></li>
+          <li><a class="link" href="">карта штата</a></li>
+          <li><a class="link" href="inner.html">гостиницы</a></li>
         </ul>
       </header>
       <div class="site-preview">
@@ -43,8 +43,11 @@
         </h2>
         <section class="features">
           <div class="feature-item">
-            <h2>Настоящий городок -№1- Седона не акракцион для туристов, там течет своя жизнь</h2>
-            <img src="./src/img/image.jpg" />
+            <h2>
+              Настоящий городок <br />-№1- <br />Седона не акракцион для туристов, там течет своя
+              жизнь
+            </h2>
+            <img src="./img/image.jpg" />
           </div>
         </section>
         <section class="subtitle">
@@ -96,13 +99,28 @@
                 <label for="appointment-chekout">дата выезда</label>
                 <input id="appointment-time" type="text" name="date" placeholder="01.01.2020" />
               </div>
-              <div class="appointment-item">
-                <label for="appointment-name">взрослые</label>
-                <input class="cl" id="appointment-name" type="text" name="number" placeholder="0" />
-              </div>
-              <div class="appointment-item">
-                <label for="appointment-name_chl">дети</label>
-                <input class="cl" id="appointment-phone" type="tel" name="number" placeholder="0" />
+
+              <div class="box">
+                <div class="appointment-item">
+                  <label for="appointment-name">взрослые</label>
+                  <input
+                    class="cl"
+                    id="app ointment-name"
+                    type="text"
+                    name="number"
+                    placeholder="0"
+                  />
+                </div>
+                <div class="appointment-item">
+                  <label class="chl_short" for="appointment-name_chl">дети</label>
+                  <input
+                    class="cl"
+                    id="appointment-phone"
+                    type="tel"
+                    name="number"
+                    placeholder="0"
+                  />
+                </div>
               </div>
               <button class="modal-form_button button" type="submit">найти</button>
             </div>
