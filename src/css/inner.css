@@ -1,0 +1,81 @@
+.hotel-list {
+  padding: 20px 10px;
+  border-bottom: 1px solid red;
+}
+
+.hotel-list:last-of-type {
+  border-bottom: 0 none;
+}
+
+.hotel-list_item {
+  display: flex;
+  border-top: solid #e5e5e5 1px;
+  padding-top: 30px;
+}
+
+.hotel-item_stars {
+  height: 100px;
+  margin-left: auto;
+}
+
+.hotel-item_stars-list {
+  height: 17px;
+  margin-top: 5px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.hotel-item_stars-text {
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  color: #666;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'PT Sans';
+}
+
+.hotel-item_star {
+  width: 18px;
+  height: 17px;
+  margin-right: 6px;
+  background-image: url(../img/starstar.svg);
+}
+
+.img_hotel {
+  padding-left: 75px;
+  width: 135px;
+  height: 90px;
+}
+
+.text_hotel {
+  padding-left: 30px;
+  padding-bottom: 60px;
+}
+
+.inner_content {
+  background-color: var(--basic-white);
+}
+
+.booking {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #766357;
+  color: white;
+  padding: 5px 10px;
+}
+
+.more {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--basic-blue);
+  color: white;
+  padding: 5px 10px;
+}
