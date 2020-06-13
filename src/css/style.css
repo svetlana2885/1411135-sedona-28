@@ -35,6 +35,7 @@
   width: 470px;
   height: 80px;
   margin: 0 auto;
+  padding-top: 45px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -53,17 +54,17 @@
 .features {
   margin: 0;
   padding: 0;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
 .feature-item {
   display: flex;
   column-gap: 20px;
   text-align: center;
+  padding-top: 50px;
 }
 
 .feature-item p {
-  margin: 0 10px;
+  /* margin: 0 10px;*/
 }
 
 .feature-item h2 {
@@ -71,11 +72,17 @@
   line-height: 21px;
 }
 
+.feature-item_list {
+  /* width: 255px;
+  height: 300px;*/
+  padding-top: 60px;
+}
+
 .subtitle {
   display: flex;
+  justify-content: space-between;
   column-gap: 20px;
-  outline: 5px solid #ca07594d;
-  outline-offset: -5px;
+  padding: 70px;
 }
 
 .appointment {
@@ -154,15 +161,18 @@
   background-color: #f2f2f2;
   box-sizing: border-box;
 }
+
 .box {
   display: flex;
   justify-content: space-between;
 }
+
 .cl {
   width: 115px;
   border: none;
   background-color: #f2f2f2;
 }
+
 .chl_short {
   width: 68px;
 }
