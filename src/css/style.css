@@ -60,11 +60,19 @@
   display: flex;
   column-gap: 20px;
   text-align: center;
-  padding-top: 50px;
+  /* padding-top: 50px;*/
+}
+
+.feature-item_sedona {
+  /*display: flex;*/
+  color: white;
+  background-color: #81b3d2;
 }
 
 .feature-item p {
-  /* margin: 0 10px;*/
+  margin: 0;
+  padding-top: 30px;
+  color: #f2f2f2;
 }
 
 .feature-item h2 {
@@ -83,6 +91,12 @@
   justify-content: space-between;
   column-gap: 20px;
   padding: 70px;
+}
+
+.subtitle_list {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
 }
 
 .appointment {

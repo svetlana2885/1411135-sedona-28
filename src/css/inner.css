@@ -79,3 +79,80 @@
   color: white;
   padding: 5px 10px;
 }
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41spx;
+  margin-bottom: 15px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: black;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: red;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: 'PT Sans';
+  font-size: 14px;
+}
+
+.price-controls input {
+  font-family: inherit;
+  font-size: inherit;
+}
