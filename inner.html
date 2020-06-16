@@ -31,31 +31,95 @@
           <li><a class="link" href="inner.html">гостиницы</a></li>
         </ul>
       </header>
-      <section class="">
-        <div>
-          <img src="./src/img/background.jpg" alt="background" />
+      <section class="b-filter">
+        <div class="b-filter_list">
+          <h4>инфраструктура:</h4>
+          <ul>
+            <li class="filter-option filter-checkbox">
+              <input
+                class="visually-hidden filter-input-checkbox filter-input"
+                type="checkbox"
+                name="pool"
+                id="filter-pool"
+                checked
+              />
+              <label for="pool">бассейн</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input
+                class="visually-hidden filter-input-checkbox filter-input"
+                type="checkbox"
+                name="parking"
+                id="filter-parking"
+              />
+              <label for="filter-parking">парковка</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input
+                class="visually-hidden filter-input-checkbox filter-input"
+                type="checkbox"
+                name="wi-fi"
+                id="filter-wi-fi"
+                checked
+              />
+              <label for="filter-wi-fi">wi-fi</label>
+            </li>
+          </ul>
         </div>
-        <div class="list_one"></div>
-        <div class="list_two"></div>
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="filtr-item">
-            <legend>Стоимость в сутки (р):</legend>
+        <div class="b-filter_list b-filter_list-type">
+          <h4>тип жилья:</h4>
+          <ul>
+            <li class="filter-option filter-checkbox">
+              <input
+                class="visually-hidden filter-input-checkbox filter-input"
+                type="checkbox"
+                name="hotels"
+                id="filter-hotels"
+                checked
+              />
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input
+                class="visually-hidden filter-input-checkbox filter-input"
+                type="checkbox"
+                name="motel"
+                id="filter-motel"
+              />
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input
+                class="visually-hidden filter-input-checkbox filter-input"
+                type="checkbox"
+                name="apart"
+                id="filter-apart"
+                checked
+              />
+              <label for="filter-apart">Апартаменты</label>
+            </li>
+          </ul>
+        </div>
+        <form method="get" class="b-filter-form" action="https://echo.htmlacademy.ru">
+          <fieldset class="b-filter-form_item">
+            <h4>Стоимость в сутки (р):</h4>
+            <div class="price-controls">
+              <labela class="min-prace">
+                <input type="number" name="min_price" value="от 0" />
+              </labela>
+              <label class="max-prace">
+                <input type="number" name="max_price" value="до 3000" />
+              </label>
+            </div>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar" style="width: 30% margin-left: 20%"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-                <div class="toggle toggle-max" tabindex="0" style="50%></div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 20%;"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 50%;"></div>
               </div>
-            </div>
-            <div class="price-controls">
-              <labela class="min-prace">
-                от <input type="number" name="min_price" value="0" />
-              </labela>
-              <label class="max-prace">
-                до <input type="number" name="max_price" value="3000" />
-              </label>
+              <button class="button_show" type="submit">показать</button>
             </div>
           </fieldset>
         </form>

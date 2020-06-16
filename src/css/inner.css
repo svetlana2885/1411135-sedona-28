@@ -80,44 +80,85 @@
   padding: 5px 10px;
 }
 
-.filter-item {
+.b-filter {
+  display: flex;
+  position: relative;
+  padding: 22px 72px;
+  background-image: url(../img/background.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.b-filter_list {
+  position: relative;
+  color: white;
+}
+
+.b-filter_list li {
+  margin-bottom: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.b-filter_list .filter-input {
+  /*display: none;*/
+}
+
+.b-filter_list h4 {
+  margin-bottom: 24px;
+}
+
+.b-filter_list label {
+  margin-left: 13px;
+}
+
+.b-filter_list-type {
+  margin-left: 120px;
+}
+
+.filter-option {
+  list-style: none;
+}
+
+.b-filter-form {
+  margin-left: auto;
+}
+
+.b-filter-form_item {
   margin: 0;
   padding: 0;
   border: none;
+  color: white;
 }
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
 }
 
-.filter-item legend {
+.b-filter-form_item legend {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .range-controls {
   position: relative;
-  height: 41spx;
   margin-bottom: 15px;
   padding-top: 40px;
   padding-right: 20px;
-  padding-left: 20px;
-  background-color: #f1f1f1;
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-  background: black;
+  background: #666;
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 300px;
   height: 2px;
-  background: red;
+  background: white;
 }
 
 .range-controls .toggle {
@@ -127,8 +168,8 @@
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: white;
+  border: 8px solid white;
+  background-color: #666;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
@@ -144,6 +185,7 @@
 
 .price-controls {
   display: flex;
+  padding-top: 10px;
 }
 
 .price-controls label {
@@ -155,4 +197,8 @@
 .price-controls input {
   font-family: inherit;
   font-size: inherit;
+}
+
+.button_show {
+  margin-left: 160px;
 }

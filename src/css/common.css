@@ -8,6 +8,12 @@
   --basic-surep-dark: #5496bd;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   min-width: 100%;
   margin: 0;
