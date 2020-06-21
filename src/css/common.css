@@ -104,5 +104,9 @@ img {
 }
 
 .site-navigation a:hover {
-  background-color: var(--basic-blue);
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-grey);
 }

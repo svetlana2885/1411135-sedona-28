@@ -36,6 +36,14 @@
   color: inherit;
 }
 
+.social-button:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.social-button:focus {
+  background-color: var(--basic-surep-dark);
+}
+
 .img-botton {
   margin: 0 auto;
 }
