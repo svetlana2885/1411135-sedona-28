@@ -59,8 +59,12 @@
   padding-right: 130px;
 }
 
-.footer-copyright:hover {
-  background-color: var(--basic-dark-blue);
+.copyright {
+  padding-left: 10px;
+}
+
+.copyright:focus {
+  color: #81b3d2;
 }
 
 .social_list {
