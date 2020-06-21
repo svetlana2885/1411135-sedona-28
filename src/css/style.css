@@ -11,6 +11,15 @@
   width: 38%;
 }
 
+.link {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+}
+
 .pic {
   position: absolute;
   bottom: 0;
@@ -26,6 +35,7 @@
   width: 470px;
   height: 80px;
   margin: 0 auto;
+  padding-top: 45px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -44,20 +54,25 @@
 .features {
   margin: 0;
   padding: 0;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
 .feature-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   column-gap: 20px;
   text-align: center;
-  outline: 5px solid #ca07594d;
-  outline-offset: -5px;
+  /* padding-top: 50px;*/
+}
+
+.feature-item_sedona {
+  /*display: flex;*/
+  color: white;
+  background-color: #81b3d2;
 }
 
 .feature-item p {
-  margin: 0 10px;
+  margin: 0;
+  padding-top: 30px;
+  color: #f2f2f2;
 }
 
 .feature-item h2 {
@@ -65,11 +80,23 @@
   line-height: 21px;
 }
 
+.feature-item_list {
+  /* width: 255px;
+  height: 300px;*/
+  padding-top: 60px;
+}
+
 .subtitle {
   display: flex;
+  justify-content: space-between;
   column-gap: 20px;
-  outline: 5px solid #ca07594d;
-  outline-offset: -5px;
+  padding: 70px;
+}
+
+.subtitle_list {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
 }
 
 .appointment {
@@ -98,14 +125,21 @@
 .modal-form {
   position: absolute;
   left: 50%;
-  top: 195px;
+  top: 168px;
   width: 570px;
   background-color: var(--basic-white);
   margin-left: -285px;
 }
 
 .modal-form_header {
-  padding: 30px 0;
+  padding-left: 180px;
+  padding-right: 190px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.modal-form_header {
+  /* padding: 30px 0;*/
 }
 
 .modal-form_body {
@@ -127,7 +161,7 @@
 }
 
 .appointment-item:last-of-type {
-  margin-bottom: 0;
+  /* margin-bottom: 0;*/
 }
 
 .appointment-item label {
@@ -149,7 +183,28 @@
   box-sizing: border-box;
 }
 
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cl {
+  width: 115px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.chl_short {
+  width: 68px;
+}
+
 .button {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
   display: block;
   padding: 16px 0;
   text-align: center;

@@ -5,6 +5,17 @@
 
 .footer-contacts {
   text-align: center;
+  padding-left: 100px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+}
+
+.tel {
+  color: black;
 }
 
 .footer-social {
@@ -23,6 +34,14 @@
   justify-items: center;
   background-color: var(--basic-blue);
   color: inherit;
+}
+
+.social-button:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.social-button:focus {
+  background-color: var(--basic-surep-dark);
 }
 
 .img-botton {
@@ -45,13 +64,18 @@
 .footer-copyright {
   display: flex;
   align-items: center;
+  padding-right: 130px;
 }
 
-.footer-copyright:hover {
-  background-color: var(--basic-dark-blue);
+.copyright {
+  padding-left: 10px;
 }
 
-.list {
+.copyright:focus {
+  color: #81b3d2;
+}
+
+.social_list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -72,22 +96,4 @@
 .img_hotel {
   width: 135px;
   height: 90px;
-}
-
-.hotel1 {
-  /* outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7); */
-  list-style: none;
-}
-
-.hotel2 {
-  /* outline-offset: -5px;
-  outline: 5px solid rgba(0, 255, 0, 0.7); */
-  list-style: none;
-}
-
-.hotel3 {
-  /* outline-offset: -5px;
-  outline: 5px solid rgba(0, 0, 255, 0.7); */
-  list-style: none;
 }

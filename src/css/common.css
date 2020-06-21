@@ -6,6 +6,14 @@
   --basic-blue: #81b3d2;
   --basic-dark-blue: #669ec0;
   --basic-surep-dark: #5496bd;
+  --basic-brown: #604e43;
+  --basic-dark-brown: #503e33;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -68,6 +76,7 @@ img {
 }
 
 .site-navigation {
+  background-color: white;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -95,5 +104,9 @@ img {
 }
 
 .site-navigation a:hover {
-  background-color: var(--basic-blue);
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-grey);
 }

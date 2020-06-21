@@ -1,0 +1,258 @@
+.hotel-list {
+  padding: 20px 10px;
+  border-bottom: 1px solid red;
+}
+
+.hotel-list:last-of-type {
+  border-bottom: 0 none;
+}
+
+.hotel-list_item {
+  display: flex;
+  border-top: solid #e5e5e5 1px;
+  padding-top: 30px;
+}
+
+.hotel-item_stars {
+  height: 100px;
+  margin-left: auto;
+}
+
+.hotel-item_stars-list {
+  height: 17px;
+  margin-top: 5px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.hotel-item_stars-text {
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  color: #666;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'PT Sans';
+}
+
+.hotel-item_star {
+  width: 18px;
+  height: 17px;
+  margin-right: 6px;
+  background-image: url(../img/starstar.svg);
+}
+
+.name:hover {
+  color: var(--basic-blue);
+}
+.name:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.img_hotel {
+  padding-left: 75px;
+  width: 135px;
+  height: 90px;
+}
+
+.text_hotel {
+  padding-left: 30px;
+  padding-bottom: 60px;
+}
+
+.inner_content {
+  background-color: var(--basic-white);
+}
+
+.found {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--basic-white);
+  padding-left: 73px;
+  padding-top: 40px;
+}
+
+.found p {
+  padding-left: 45px;
+  padding-top: 5px;
+}
+
+.filter-button {
+  border: none;
+  padding-left: 35px;
+  background-color: var(--basic-white);
+  outline: 0 none;
+  opacity: 0.3;
+  color: var(--basic-black);
+}
+
+.filter-button:hover {
+  color: var(--basic-blue);
+}
+.filter-button:active {
+  color: var(--basic-black);
+}
+
+.booking {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #766357;
+  color: white;
+  padding: 5px 10px;
+}
+
+.booking:hover {
+  background-color: var(--basic-brown);
+}
+
+.booking:active {
+  background-color: var(--basic-dark-brown);
+  color: var(--basic-extra-dark);
+}
+
+.more {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--basic-blue);
+  color: white;
+  padding: 5px 10px;
+}
+
+.more:hover {
+  background-color: var(--basic-dark-blue);
+}
+.more:active {
+  background-color: var(--basic-dark-blue);
+  color: var(--basic-extra-dark);
+}
+
+.b-filter {
+  display: flex;
+  position: relative;
+  padding: 22px 72px;
+  background-image: url(../img/background.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.b-filter_list {
+  position: relative;
+  color: white;
+}
+
+.b-filter_list li {
+  margin-bottom: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.b-filter_list .filter-input {
+  /*display: none;*/
+}
+
+.b-filter_list h4 {
+  margin-bottom: 24px;
+}
+
+.b-filter_list label {
+  margin-left: 13px;
+}
+
+.b-filter_list-type {
+  margin-left: 120px;
+}
+
+.filter-option {
+  list-style: none;
+}
+
+.b-filter-form {
+  margin-left: auto;
+}
+
+.b-filter-form_item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: white;
+}
+
+.range-filter {
+  width: 260px;
+}
+
+.b-filter-form_item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 15px;
+  padding-top: 40px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #666;
+}
+
+.range-controls .bar {
+  width: 330px;
+  height: 2px;
+  background: white;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid white;
+  background-color: #666;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  padding-top: 10px;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: 'PT Sans';
+  font-size: 14px;
+}
+
+.price-controls input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.button_show {
+  margin-left: 160px;
+}

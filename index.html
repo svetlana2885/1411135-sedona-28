@@ -8,8 +8,8 @@
       rel="stylesheet"
     />
     <link href="src/css/normalize.css" rel="stylesheet" />
-    <link href="src/css/footer.css" rel="stylesheet" />
     <link href="src/css/common.css" rel="stylesheet" />
+    <link href="src/css/footer.css" rel="stylesheet" />
     <link href="src/css/style.css" rel="stylesheet" />
   </head>
 
@@ -22,11 +22,11 @@
           </a>
         </div>
         <ul class="site-navigation">
-          <li><a href="">Информация</a></li>
-          <li><a href="">фото и видео</a></li>
+          <li><a class="link" href="">Информация</a></li>
+          <li><a class="link" href="">фото и видео</a></li>
           <li class="site-navigation__center"></li>
-          <li><a href="">карта штата</a></li>
-          <li><a href="inner.html">гостиницы</a></li>
+          <li><a class="link" href="">карта штата</a></li>
+          <li><a class="link" href="inner.html">гостиницы</a></li>
         </ul>
       </header>
       <div class="site-preview">
@@ -43,37 +43,73 @@
         </h2>
         <section class="features">
           <div class="feature-item">
-            <h2>Настоящий городок -№1- Седона не акракцион для туристов, там течет своя жизнь</h2>
+            <div class="feature-item_sedona">
+              <p class="visually-hidden"></p>
+              <h2>Настоящий городок</h2>
+              <p>-№1-</p>
+              <p>Седона не акракцион для туристов, там течет своя жизнь</p>
+            </div>
             <img src="./src/img/image.jpg" />
           </div>
         </section>
         <section class="subtitle">
-          <img src="./src/img/house.svg" />
-          <h2>жилье</h2>
-          <p>рекомендуем пожить в настоящем мотеле, все как в кино</p>
-          <div class="feature-item">
+          <div class="feature-item_list">
+            <img src="./src/img/house.svg" />
+            <h2>жилье</h2>
+            <p>
+              рекомендуем пожить в настоящем<br />
+              мотеле, все как в кино
+            </p>
+          </div>
+          <div class="feature-item_list">
             <img src="./src/img/sandwich.svg" />
             <h2>еда</h2>
-            <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p>всегда заказывайте фирменный бургер, <br />вы не разочаруетесь!</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item_list">
             <img src="./src/img/present.svg" />
             <h2>сувениры</h2>
-            не только китайского, но и местного производства!
+            <p>не только китайского, но и местного <br />производства!</p>
           </div>
+        </section>
+        <section class="features">
           <div class="feature-item">
-            там есть мост дьявола -№2- да, по нему можно пройти! если конечно вы осмелитесь
             <img src="./src/img/image2.jpg" />
+            <div class="feature-item_sedona">
+              <p class="isually-hidden"></p>
+              <h2>там есть мост дьявола</h2>
+              <p>-№2-</p>
+              <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+            </div>
           </div>
-          <div class="feature-item">
+        </section>
+        <section class="subtitle_list">
+          <div class="feature-item_list">
             <h2>небольшая площадь</h2>
             <p>
-              -№3- все достопримечательности находятся очень близко
+              -№3-
             </p>
+            <p>
+              все достопримечательности находятся очень близко
+            </p>
+          </div>
+          <div class="feature-item_list">
             <h2>красивая дорога</h2>
-            <p>-№4- ехать в седону из лас-вегаса совсем не скучно</p>
+            <p>
+              -№4-
+            </p>
+            <p>
+              ехать в седону из лас-вегаса совсем не скучно
+            </p>
+          </div>
+          <div class="feature-item_list">
             <h2>мало туристов</h2>
-            <p>-№5- большинство едет в гранд каньон и толпится там</p>
+            <p>
+              -№5-
+            </p>
+            <p>
+              большинство едет в гранд каньон и толпится там
+            </p>
           </div>
         </section>
         <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
@@ -86,7 +122,7 @@
           </div>
           <img src="./src/img/map.jpg" />
           <div class="modal-form">
-            <div class="modal-form_header caption">Поиск гостиницы в Седоне</div>
+            <a class="modal-form_header caption" href="#">Поиск гостиницы в Седоне</a>
             <div class="modal-form_body">
               <div class="appointment-item">
                 <label for="appointment-chekin">дата заезда</label>
@@ -96,13 +132,28 @@
                 <label for="appointment-chekout">дата выезда</label>
                 <input id="appointment-time" type="text" name="date" placeholder="01.01.2020" />
               </div>
-              <div class="appointment-item">
-                <label for="appointment-name">взрослые</label>
-                <input class="cl" id="appointment-name" type="text" name="number" placeholder="0" />
-              </div>
-              <div class="appointment-item">
-                <label for="appointment-name_chl">дети</label>
-                <input class="cl" id="appointment-phone" type="tel" name="number" placeholder="0" />
+
+              <div class="box">
+                <div class="appointment-item">
+                  <label for="appointment-name">взрослые</label>
+                  <input
+                    class="cl"
+                    id="app ointment-name"
+                    type="text"
+                    name="number"
+                    placeholder="0"
+                  />
+                </div>
+                <div class="appointment-item">
+                  <label class="chl_short" for="appointment-name_chl">дети</label>
+                  <input
+                    class="cl"
+                    id="appointment-phone"
+                    type="tel"
+                    name="number"
+                    placeholder="0"
+                  />
+                </div>
               </div>
               <button class="modal-form_button button" type="submit">найти</button>
             </div>
@@ -113,13 +164,13 @@
         <div class="container">
           <section class="footer-contacts">
             <p>
-              #VISITSEDONA
-              <a href="tel:+74956660166">+7(495) 666-01-66</a>
+              #VISITSEDONA <br />
+              <a class="tel" href="tel:+74956660166">+7(495) 666-01-66</a>
             </p>
           </section>
 
           <section class="footer-social">
-            <ul class="list">
+            <ul class="social_list">
               <li class="visually-hidden">
                 <a class="social-button" href="#">
                   <img class="img-botton" src="./src/img/twitter1.svg" alt="twitter" />
@@ -137,10 +188,12 @@
               </li>
             </ul>
           </section>
-          <p class="footer-copyright">
+          <div class="footer-copyright">
             <img src="./src/img/website.svg" />
-            <img src="./src/img/logo-htmlacademy.svg" />
-          </p>
+            <a class="copyright" href="#">
+              <img src="./src/img/logo-htmlacademy.svg" />
+            </a>
+          </div>
         </div>
       </footer>
     </div>
