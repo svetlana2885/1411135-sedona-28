@@ -81,8 +81,7 @@
 }
 
 .feature-item_list {
-  /* width: 255px;
-  height: 300px;*/
+  width: 255px;
   padding-top: 60px;
 }
 
@@ -97,6 +96,8 @@
   display: flex;
   justify-content: space-between;
   background-color: #eeeeee;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .appointment {
