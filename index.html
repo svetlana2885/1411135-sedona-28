@@ -112,18 +112,18 @@
             </p>
           </div>
         </section>
-        <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
+        <div class="appointment" action="https://echo.htmlacademy.ru" method="post">
           <div class="appointment_header">
             <h2>заинтересовались?</h2>
             <p class="appointment-info">
               укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
               седоне
             </p>
+            <a class="modal-form_header caption" href="#">Поиск гостиницы в Седоне</a>
           </div>
           <img src="./src/img/map.jpg" />
           <div class="modal-form">
-            <a class="modal-form_header caption" href="#">Поиск гостиницы в Седоне</a>
-            <div class="modal-form_body">
+            <form class="modal-form_body">
               <div class="appointment-item">
                 <label for="appointment-chekin">дата заезда</label>
                 <input id="appointment-chekin" type="text" name="date" placeholder="01.01.2020" />
@@ -156,9 +156,9 @@
                 </div>
               </div>
               <button class="modal-form_button button" type="submit">найти</button>
-            </div>
+            </form>
           </div>
-        </form>
+        </div>
       </main>
       <footer class="page-footer main-footer">
         <div class="container">
