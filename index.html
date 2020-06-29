@@ -32,15 +32,15 @@
       <div class="site-preview">
         <img src="./src/img/backgroundphoto.jpg" />
         <img class="sedona-text" src="./src/img/welcome.png" alt="welcome" />
-        <img class="pic" src="./src/img/shape.png" alt="form" />
+        <img class="pic" src="./src/img/shape1.png" alt="form" />
       </div>
       <main class="conteiner">
-        <p class="title">
+        <h2 class="title">
           Седона - небольшой городок в Аризоне,заслуживающий большего.
-        </p>
-        <h2 class="visually-hidden">
-          Рассмотрим 5 причин, по которым Седона круче,чем гранд каньон!
         </h2>
+        <p class="visually-hidden">
+          Рассмотрим 5 причин, по которым Седона круче,чем гранд каньон!
+        </p>
         <section class="features">
           <div class="feature-item">
             <div class="feature-item_sedona">
@@ -112,24 +112,24 @@
             </p>
           </div>
         </section>
-        <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
+        <div class="appointment" action="https://echo.htmlacademy.ru" method="post">
           <div class="appointment_header">
             <h2>заинтересовались?</h2>
             <p class="appointment-info">
               укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
               седоне
             </p>
+            <a class="modal-form_header caption" href="#">Поиск гостиницы в Седоне</a>
           </div>
           <img src="./src/img/map.jpg" />
           <div class="modal-form">
-            <a class="modal-form_header caption" href="#">Поиск гостиницы в Седоне</a>
-            <div class="modal-form_body">
+            <form class="modal-form_body">
               <div class="appointment-item">
                 <label for="appointment-chekin">дата заезда</label>
-                <input id="appointment-date" type="text" name="date" placeholder="01.01.2020" />
+                <input id="appointment-chekin" type="text" name="date" placeholder="01.01.2020" />
               </div>
               <div class="appointment-item">
-                <label for="appointment-chekout">дата выезда</label>
+                <label for="appointment-time">дата выезда</label>
                 <input id="appointment-time" type="text" name="date" placeholder="01.01.2020" />
               </div>
 
@@ -138,8 +138,8 @@
                   <label for="appointment-name">взрослые</label>
                   <input
                     class="cl"
-                    id="app ointment-name"
-                    type="text"
+                    id="ointment-name"
+                    type="number"
                     name="number"
                     placeholder="0"
                   />
@@ -148,17 +148,17 @@
                   <label class="chl_short" for="appointment-name_chl">дети</label>
                   <input
                     class="cl"
-                    id="appointment-phone"
-                    type="tel"
+                    id="appointment-name_chl"
+                    type="number"
                     name="number"
                     placeholder="0"
                   />
                 </div>
               </div>
               <button class="modal-form_button button" type="submit">найти</button>
-            </div>
+            </form>
           </div>
-        </form>
+        </div>
       </main>
       <footer class="page-footer main-footer">
         <div class="container">

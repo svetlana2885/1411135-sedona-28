@@ -10,12 +10,14 @@
 .hotel-list_item {
   display: flex;
   border-top: solid #e5e5e5 1px;
+  border-bottom: solid #e5e5e5 1px;
   padding-top: 30px;
 }
 
 .hotel-item_stars {
   height: 100px;
   margin-left: auto;
+  margin-right: 50px;
 }
 
 .hotel-item_stars-list {
@@ -46,6 +48,7 @@
 .name:hover {
   color: var(--basic-blue);
 }
+
 .name:active {
   color: var(--basic-black);
   opacity: 0.3;
@@ -79,6 +82,11 @@
   padding-top: 5px;
 }
 
+.triangle {
+  margin-left: auto;
+  margin-right: 70px;
+}
+
 .filter-button {
   border: none;
   padding-left: 35px;
@@ -91,6 +99,7 @@
 .filter-button:hover {
   color: var(--basic-blue);
 }
+
 .filter-button:active {
   color: var(--basic-black);
 }
@@ -129,6 +138,7 @@
 .more:hover {
   background-color: var(--basic-dark-blue);
 }
+
 .more:active {
   background-color: var(--basic-dark-blue);
   color: var(--basic-extra-dark);
@@ -147,6 +157,7 @@
 .b-filter_list {
   position: relative;
   color: white;
+  border: 0 none;
 }
 
 .b-filter_list li {
@@ -177,12 +188,13 @@
 
 .b-filter-form {
   margin-left: auto;
+  border: none;
 }
 
 .b-filter-form_item {
+  border: 0 none;
   margin: 0;
   padding: 0;
-  border: none;
   color: white;
 }
 
@@ -210,7 +222,7 @@
 }
 
 .range-controls .bar {
-  width: 330px;
+  width: 180px;
   height: 2px;
   background: white;
 }
@@ -249,10 +261,25 @@
 }
 
 .price-controls input {
+  width: 120px;
+  height: 20px;
   font-family: inherit;
   font-size: inherit;
 }
 
 .button_show {
-  margin-left: 160px;
+  width: 140px;
+  margin-left: 80px;
+  margin-top: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.visually-hidden + label::before {
+  width: 25px;
+  height: 25px;
+}
+
+.visually-hidden:checked + label::after {
+  background-image: url('img/done.svg');
 }

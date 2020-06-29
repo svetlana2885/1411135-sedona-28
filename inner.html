@@ -31,8 +31,8 @@
           <li><a class="link" href="inner.html">гостиницы</a></li>
         </ul>
       </header>
-      <section class="b-filter">
-        <div class="b-filter_list">
+      <form class="b-filter">
+        <fieldset class="b-filter_list">
           <h4>инфраструктура:</h4>
           <ul>
             <li class="filter-option filter-checkbox">
@@ -65,8 +65,8 @@
               <label for="filter-wi-fi">wi-fi</label>
             </li>
           </ul>
-        </div>
-        <div class="b-filter_list b-filter_list-type">
+        </fieldset>
+        <fieldset class="b-filter_list b-filter_list-type">
           <h4>тип жилья:</h4>
           <ul>
             <li class="filter-option filter-checkbox">
@@ -99,16 +99,16 @@
               <label for="filter-apart">Апартаменты</label>
             </li>
           </ul>
-        </div>
-        <form method="get" class="b-filter-form" action="https://echo.htmlacademy.ru">
+        </fieldset>
+        <fieldset method="get" class="b-filter-form" action="https://echo.htmlacademy.ru">
           <fieldset class="b-filter-form_item">
             <h4>Стоимость в сутки (р):</h4>
             <div class="price-controls">
-              <labela class="min-prace">
-                <input type="number" name="min_price" value="от 0" />
+              <labela class="prace">
+                <input class="number" type="number" name="min_price" value="от 0" />
               </labela>
-              <label class="max-prace">
-                <input type="number" name="max_price" value="до 3000" />
+              <label class="prace">
+                <input class="number" type="number" name="max_price" value="до 3000" />
               </label>
             </div>
             <div class="range-filter">
@@ -119,17 +119,23 @@
                 <div class="toggle toggle-min" tabindex="0" style="left: 20%;"></div>
                 <div class="toggle toggle-max" tabindex="0" style="left: 50%;"></div>
               </div>
-              <button class="button_show" type="submit">показать</button>
+              <div>
+                <button class="button_show" type="submit">показать</button>
+              </div>
             </div>
           </fieldset>
-        </form>
-      </section>
+        </fieldset>
+      </form>
       <section class="found">
         <h3>найдено: 3</h3>
         <p>сортировка:</p>
         <button class="filter-button" type="submit">по цене</button>
         <button class="filter-button" type="submit">по типу</button>
         <button class="filter-button" type="submit">по рейтингу</button>
+        <div class="triangle">
+          <img src="./src/img/icon-up-dir.svg" alt="треугольник" />
+          <img src="./src/img/icon-down-dir1.svg" alt="треугольник" />
+        </div>
       </section>
 
       <section class="inner_content">
@@ -164,7 +170,7 @@
                 <div class="hotel-item_star"></div>
                 <div class="hotel-item_star"></div>
               </div>
-              <div class="hotel-item_stars-text">Рейтинг: 8,5</div>
+              <div class="hotel-item_stars-text">Рейтинг: 8,9</div>
             </div>
           </div>
           <div class="hotel-list_item">
@@ -181,9 +187,8 @@
                 <div class="hotel-item_star"></div>
                 <div class="hotel-item_star"></div>
                 <div class="hotel-item_star"></div>
-                <div class="hotel-item_star"></div>
               </div>
-              <div class="hotel-item_stars-text">Рейтинг: 8,5</div>
+              <div class="hotel-item_stars-text">Рейтинг: 9,2</div>
             </div>
           </div>
         </div>
