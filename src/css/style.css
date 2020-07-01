@@ -60,11 +60,9 @@
   display: flex;
   column-gap: 20px;
   text-align: center;
-  /* padding-top: 50px;*/
 }
 
 .feature-item_sedona {
-  /*display: flex;*/
   color: white;
   background-color: #81b3d2;
 }
@@ -96,7 +94,7 @@
 .subtitle_list {
   display: flex;
   justify-content: space-between;
-  background-color: #eeeeee;
+  background-color: #eee;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -131,6 +129,16 @@
   width: 570px;
   background-color: var(--basic-white);
   margin-left: -285px;
+  box-shadow: 0 7px 15px;
+}
+
+.modal-form_body {
+  padding: 55px;
+   display: none;
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-form_header {
@@ -138,14 +146,6 @@
   padding-right: 190px;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.modal-form_header {
-  /* padding: 30px 0;*/
-}
-
-.modal-form_body {
-  padding: 55px;
 }
 
 .modal-form_button {
@@ -160,10 +160,6 @@
   display: flex;
   margin-bottom: 30px;
   padding-bottom: 30px;
-}
-
-.appointment-item:last-of-type {
-  /* margin-bottom: 0;*/
 }
 
 .appointment-item label {
