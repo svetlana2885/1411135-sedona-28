@@ -283,3 +283,8 @@
 .visually-hidden:checked + label::after {
   background-image: url('img/done.svg');
 }
+
+.filter-input-checkbox {
+  width: 23px;
+  height: 23px;
+}
