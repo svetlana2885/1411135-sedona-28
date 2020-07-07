@@ -43,7 +43,7 @@
 }
 
 .visually-hidden {
-  padding: 10px;
+  padding-left: 6px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -116,16 +116,25 @@
   background: #766357;
 }
 
+.appointment-text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+}
+
 .appointment-info {
+  line-height: 24px;
   margin: 0 auto;
   width: 45%;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .modal-form {
   position: absolute;
   left: 50%;
-  top: 240px;
+  top: 295px;
   width: 570px;
   background-color: var(--basic-white);
   margin-left: -285px;
@@ -134,7 +143,7 @@
 
 .modal-form_body {
   padding: 55px;
-   display: none;
+  display: none;
 }
 
 .modal-show {
@@ -142,10 +151,15 @@
 }
 
 .modal-form_header {
-  padding-left: 180px;
-  padding-right: 190px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .modal-form_button {
@@ -160,6 +174,11 @@
   display: flex;
   margin-bottom: 30px;
   padding-bottom: 30px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .appointment-item label {
@@ -181,15 +200,33 @@
   box-sizing: border-box;
 }
 
+.button-calendar {
+  border: none;
+  outline: 0 none;
+  cursor: pointer;
+}
+
+a.button-calendar:hover {
+  color: red;
+}
+
 .box {
   display: flex;
   justify-content: space-between;
 }
 
 .cl {
-  width: 115px;
+  width: 60px;
   border: none;
   background-color: #f2f2f2;
+}
+
+.button-cl {
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  background-color: #f2f2f2;
+  padding-right: 15px;
 }
 
 .chl_short {
@@ -208,4 +245,13 @@
   text-align: center;
   border: none;
   background-color: var(--basic-blue);
+}
+
+.rotate-one {
+  position: absolute;
+}
+
+.rotate-two {
+  position: absolute;
+  transform: rotate(90deg);
 }

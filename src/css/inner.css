@@ -92,8 +92,7 @@
   padding-left: 35px;
   background-color: var(--basic-white);
   outline: 0 none;
-  opacity: 0.3;
-  color: var(--basic-black);
+  color: #cacaca;
 }
 
 .filter-button:hover {
@@ -104,14 +103,28 @@
   color: var(--basic-black);
 }
 
+.filter-button-up {
+  border: none;
+  background-color: var(--basic-white);
+  outline: 0 none;
+}
+
+.filter-button-up:hover {
+  color: var(--basic-blue);
+}
+
+.filter-button-up:active {
+  color: var(--basic-black);
+}
+
 .booking {
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
-  background-color: #766357;
-  color: white;
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
   padding: 5px 10px;
 }
 
@@ -131,7 +144,7 @@
   font-size: 14px;
   line-height: 21px;
   background-color: var(--basic-blue);
-  color: white;
+  color: var(--basic-white);
   padding: 5px 10px;
 }
 
@@ -146,6 +159,7 @@
 
 .b-filter {
   display: flex;
+  justify-content: space-between;
   position: relative;
   padding: 22px 72px;
   background-image: url(../img/background.jpg);
@@ -156,7 +170,7 @@
 
 .b-filter_list {
   position: relative;
-  color: white;
+  color: var(--basic-white);
   border: 0 none;
 }
 
@@ -164,10 +178,7 @@
   margin-bottom: 23px;
   display: flex;
   align-items: center;
-}
-
-.b-filter_list .filter-input {
-  /*display: none;*/
+  padding-left: 30px;
 }
 
 .b-filter_list h4 {
@@ -178,12 +189,13 @@
   margin-left: 13px;
 }
 
-.b-filter_list-type {
-  margin-left: 120px;
-}
-
-.filter-option {
+.filter-option filter-checkbox {
   list-style: none;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .b-filter-form {
@@ -195,7 +207,8 @@
   border: 0 none;
   margin: 0;
   padding: 0;
-  color: white;
+  color: var(--basic-white);
+  margin-left: 340px;
 }
 
 .range-filter {
@@ -224,7 +237,7 @@
 .range-controls .bar {
   width: 180px;
   height: 2px;
-  background: white;
+  background: var(--basic-white);
 }
 
 .range-controls .toggle {
@@ -275,16 +288,64 @@
   padding-bottom: 8px;
 }
 
-.visually-hidden + label::before {
-  width: 25px;
-  height: 25px;
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.visually-hidden:checked + label::after {
-  background-image: url('img/done.svg');
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-top: 5px;
 }
 
-.filter-input-checkbox {
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--special);
+}
+
+.filter-input-checkbox + label::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 0;
   width: 23px;
   height: 23px;
+  border: 2px solid white;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -38px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/done.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-info {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  padding-bottom: 25px;
+}
+
+.filter-button-up {
+  padding-top: 20px;
 }
