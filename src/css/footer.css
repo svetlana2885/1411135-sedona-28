@@ -25,6 +25,10 @@
   flex-wrap: wrap;
 }
 
+.social {
+  padding-left: 6px;
+}
+
 .social-button {
   width: 45px;
   height: 45px;

@@ -112,9 +112,9 @@
             </p>
           </div>
         </section>
-        <div class="appointment" action="https://echo.htmlacademy.ru" method="post">
+        <div class="appointment">
           <div class="appointment_header">
-            <h2>заинтересовались?</h2>
+            <h2 class="appointment-text">заинтересовались?</h2>
             <p class="appointment-info">
               укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
               седоне
@@ -123,19 +123,25 @@
           </div>
           <img src="./src/img/map.jpg" />
           <div class="modal-form">
-            <form class="modal-form_body">
+            <form class="modal-form_body" action="https://echo.htmlacademy.ru" method="get">
               <div class="appointment-item">
-                <label for="appointment-chekin">дата заезда</label>
+                <label for="appointment-chekin">дата заезда:</label>
                 <input id="appointment-chekin" type="text" name="date" placeholder="01.01.2020" />
+                <button class="button-calendar"><img src="./src/img/calendar.svg" /></button>
               </div>
               <div class="appointment-item">
-                <label for="appointment-time">дата выезда</label>
+                <label for="appointment-time">дата выезда:</label>
                 <input id="appointment-time" type="text" name="date" placeholder="01.01.2020" />
+                <button class="button-calendar">
+                  <img src="./src/img/calendar.svg" />
+                </button>
               </div>
-
               <div class="box">
                 <div class="appointment-item">
-                  <label for="appointment-name">взрослые</label>
+                  <label for="appointment-name">взрослые:</label>
+                  <button class="button-cl">
+                    <img class="rotate-one" src="./src/img/rectangle1.svg" />
+                  </button>
                   <input
                     class="cl"
                     id="ointment-name"
@@ -143,9 +149,16 @@
                     name="number"
                     placeholder="0"
                   />
+                  <button class="button-cl">
+                    <img class="rotate-one" src="./src/img/rectangle1.svg" />
+                    <img class="rotate-two" src="./src/img/rectangle1.svg" />
+                  </button>
                 </div>
                 <div class="appointment-item">
-                  <label class="chl_short" for="appointment-name_chl">дети</label>
+                  <label class="chl_short" for="appointment-name_chl">дети:</label>
+                  <button class="button-cl">
+                    <img class="rotate-one" src="./src/img/rectangle1.svg" />
+                  </button>
                   <input
                     class="cl"
                     id="appointment-name_chl"
@@ -153,9 +166,13 @@
                     name="number"
                     placeholder="0"
                   />
+                  <button class="button-cl">
+                    <img class="rotate-one" src="./src/img/rectangle1.svg" />
+                    <img class="rotate-two" src="./src/img/rectangle1.svg" />
+                  </button>
                 </div>
               </div>
-              <button class="modal-form_button button" type="submit">найти</button>
+              <button class="modal-form_button button" type="submit">НАЙТИ</button>
             </form>
           </div>
         </div>

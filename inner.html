@@ -31,9 +31,9 @@
           <li><a class="link" href="inner.html">гостиницы</a></li>
         </ul>
       </header>
-      <form class="b-filter">
+      <section class="b-filter">
         <fieldset class="b-filter_list">
-          <h4>инфраструктура:</h4>
+          <legend class="filter-info">инфраструктура:</legend>
           <ul>
             <li class="filter-option filter-checkbox">
               <input
@@ -67,7 +67,7 @@
           </ul>
         </fieldset>
         <fieldset class="b-filter_list b-filter_list-type">
-          <h4>тип жилья:</h4>
+          <legend class="filter-info">тип жилья:</legend>
           <ul>
             <li class="filter-option filter-checkbox">
               <input
@@ -100,32 +100,30 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset method="get" class="b-filter-form" action="https://echo.htmlacademy.ru">
-          <fieldset class="b-filter-form_item">
-            <h4>Стоимость в сутки (р):</h4>
-            <div class="price-controls">
-              <labela class="prace">
-                <input class="number" type="number" name="min_price" value="от 0" />
-              </labela>
-              <label class="prace">
-                <input class="number" type="number" name="max_price" value="до 3000" />
-              </label>
-            </div>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar" style="width: 30% margin-left: 20%"></div>
-                </div>
-                <div class="toggle toggle-min" tabindex="0" style="left: 20%;"></div>
-                <div class="toggle toggle-max" tabindex="0" style="left: 50%;"></div>
+        <form class="b-filter_list" action="https://echo.htmlacademy.ru" method="get">
+          <legend class="filter-info">Стоимость в сутки (р):</legend>
+          <div class="price-controls">
+            <labela class="prace">
+              <input class="number" type="number" name="min_price" value="от 0" />
+            </labela>
+            <label class="prace">
+              <input class="number" type="number" name="max_price" value="до 3000" />
+            </label>
+          </div>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="width: 30% margin-left: 20%"></div>
               </div>
-              <div>
-                <button class="button_show" type="submit">показать</button>
-              </div>
+              <div class="toggle toggle-min" tabindex="0" style="left: 20%;"></div>
+              <div class="toggle toggle-max" tabindex="0" style="left: 50%;"></div>
             </div>
-          </fieldset>
-        </fieldset>
-      </form>
+            <div>
+              <button class="button_show" type="submit">показать</button>
+            </div>
+          </div>
+        </form>
+      </section>
       <section class="found">
         <h3>найдено: 3</h3>
         <p>сортировка:</p>
@@ -133,8 +131,12 @@
         <button class="filter-button" type="submit">по типу</button>
         <button class="filter-button" type="submit">по рейтингу</button>
         <div class="triangle">
-          <img src="./src/img/icon-up-dir.svg" alt="треугольник" />
-          <img src="./src/img/icon-down-dir1.svg" alt="треугольник" />
+          <button class="filter-button-up">
+            <img src="./src/img/icon-up-dir.svg" alt="треугольник" />
+          </button>
+          <button class="filter-button-up">
+            <img src="./src/img/icon-down-dir1.svg" alt="треугольник" />
+          </button>
         </div>
       </section>
 
@@ -204,17 +206,17 @@
           </section>
           <section class="footer-social">
             <ul class="social_list">
-              <li class="visually-hidden">
+              <li class="social">
                 <a class="social-button" href="#">
                   <img class="img-botton" src="./src/img/twitter1.svg" alt="twitter" />
                 </a>
               </li>
-              <li class="visually-hidden">
+              <li class="social">
                 <a class="social-button" href="#">
                   <img class="img-botton" src="./src/img/fb-icon1.svg" alt="fb" />
                 </a>
               </li>
-              <li class="visually-hidden">
+              <li class="social">
                 <a class="social-button" href="#">
                   <img class="img-botton" src="./src/img/youtube.svg" alt="youtube" />
                 </a>
