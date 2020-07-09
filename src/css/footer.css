@@ -52,14 +52,6 @@
   margin: 0 auto;
 }
 
-.social-button :hover {
-  background-color: var(--basic-blue);
-}
-
-.social-button :focus {
-  background-color: var(--basic-blue);
-}
-
 .main-footer .container {
   display: flex;
   justify-content: space-between;

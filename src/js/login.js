@@ -1,7 +1,16 @@
-var link = document.querySelector('.modal-form_header');
-var popup = document.querySelector('.modal-form_body');
+document.addEventListener('DOMContentLoaded', toggleModal);
 
-link.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popup.classList.toggle('modal-show');
-});
+function toggleModal() {
+  var link = document.querySelector('.modal-form_header');
+  var popup = document.querySelector('.modal-form_body');
+
+  const toggle_class = 'modal-toggle-show';
+
+  popup.classList.toggle(toggle_class);
+
+  link.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    console.log('click');
+    popup.classList.toggle(toggle_class);
+  });
+}
