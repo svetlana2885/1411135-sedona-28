@@ -30,11 +30,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .app-container {
   max-width: 1200px;
   min-width: 1000px;

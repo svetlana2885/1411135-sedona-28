@@ -11,6 +11,7 @@
     <link href="src/css/common.css" rel="stylesheet" />
     <link href="src/css/footer.css" rel="stylesheet" />
     <link href="src/css/style.css" rel="stylesheet" />
+    <script src="./src/js/login.js"></script>
   </head>
 
   <body class="page-body">
@@ -127,12 +128,14 @@
               <div class="appointment-item">
                 <label for="appointment-chekin">дата заезда:</label>
                 <input id="appointment-chekin" type="text" name="date" placeholder="01.01.2020" />
-                <button class="button-calendar"><img src="./src/img/calendar.svg" /></button>
+                <button class="button-calendar" type="button">
+                  <img src="./src/img/calendar.svg" />
+                </button>
               </div>
               <div class="appointment-item">
                 <label for="appointment-time">дата выезда:</label>
                 <input id="appointment-time" type="text" name="date" placeholder="01.01.2020" />
-                <button class="button-calendar">
+                <button class="button-calendar" type="button">
                   <img src="./src/img/calendar.svg" />
                 </button>
               </div>
@@ -214,6 +217,5 @@
         </div>
       </footer>
     </div>
-    <script src="./src/js/login.js"></script>
   </body>
 </html>

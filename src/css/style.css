@@ -58,7 +58,6 @@
 
 .feature-item {
   display: flex;
-  column-gap: 20px;
   text-align: center;
 }
 
@@ -143,11 +142,11 @@
 
 .modal-form_body {
   padding: 55px;
-  display: none;
+  display: block;
 }
 
-.modal-show {
-  display: block;
+.modal-toggle-show {
+  display: none;
 }
 
 .modal-form_header {
@@ -160,6 +159,14 @@
   padding-right: 140px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.caption:hover {
+  background: #604e43;
+}
+
+.caption:focus {
+  background: #503e33;
 }
 
 .modal-form_button {
@@ -190,24 +197,31 @@
 
 .appointment-item input {
   flex-grow: 1;
-  padding-top: 8px;
-  padding-right: 15px;
-  padding-bottom: 7px;
-  padding-left: 15px;
+  height: 38px;
   font: inherit;
   border: none;
   background-color: #f2f2f2;
   box-sizing: border-box;
 }
 
+input::-webkit-input-placeholder {
+  color: black;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 1;
+  background-color: white;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  /* padding-left: 30px;
+  padding-right: 30px;
+  outline: 0;*/
+}
+
 .button-calendar {
   border: none;
   outline: 0 none;
   cursor: pointer;
-}
-
-a.button-calendar:hover {
-  color: red;
 }
 
 .box {
@@ -219,6 +233,7 @@ a.button-calendar:hover {
   width: 60px;
   border: none;
   background-color: #f2f2f2;
+  text-align: center;
 }
 
 .button-cl {
