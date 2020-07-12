@@ -50,6 +50,7 @@ a {
 
 .main-header {
   z-index: 1;
+  position: relative;
 }
 
 .main-header-logo {

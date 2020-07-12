@@ -43,6 +43,7 @@
 }
 
 .visually-hidden {
+  padding-bottom: 20px;
   padding-left: 6px;
   font-family: PT Sans;
   font-style: normal;
@@ -67,18 +68,18 @@
 }
 
 .feature-item p {
+  padding-bottom: 43px;
   margin: 0;
-  padding-top: 30px;
   color: #f2f2f2;
 }
 
 .feature-item h2 {
+  width: 400px;
   font-size: 21px;
   line-height: 21px;
 }
 
 .feature-item_list {
-  width: 255px;
   padding-top: 47px;
   padding-bottom: 55px;
 }
@@ -87,14 +88,16 @@
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
-  padding: 70px;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .subtitle_list {
   display: flex;
   justify-content: space-between;
   background-color: #eee;
-  padding-left: 70px;
+  padding-left: 95px;
   padding-right: 70px;
 }
 
@@ -180,7 +183,7 @@
 .appointment-item {
   display: flex;
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px;*/
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;

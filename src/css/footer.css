@@ -50,17 +50,19 @@
 
 .img-botton {
   margin: 0 auto;
+  border-radius: 20%;
 }
 
 .main-footer .container {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 100px;
 }
 
 .footer-copyright {
   display: flex;
   align-items: center;
-  padding-right: 130px;
 }
 
 .copyright {
