@@ -161,10 +161,11 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 180px;
+  /*height: 180px;*/
 }
 
 .b-filter_list {
+  display: flex;
   position: relative;
   color: var(--basic-white);
   border: 0 none;
