@@ -256,7 +256,7 @@ a {
 
 .gmap_canvas {
   overflow: hidden;
-  background: none !important;
+  background: none;
   height: 595px;
   width: 1200px;
 }
