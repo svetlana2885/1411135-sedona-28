@@ -154,14 +154,12 @@
 
 .b-filter {
   display: flex;
-  /* justify-content: space-between;*/
   position: relative;
   padding: 22px 72px;
   background-image: url(../img/background.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  /*height: 180px;*/
 }
 
 .b-filter_list {
