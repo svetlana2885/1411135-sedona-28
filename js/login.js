@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', toggleModal);
 
 function toggleModal() {
   var link = document.querySelector('.modal-form_header');
-  var popup = document.querySelector('.modal-form_body');
+  var popup = document.querySelector('.modal-form');
 
   const toggle_class = 'modal-toggle-show';
 
