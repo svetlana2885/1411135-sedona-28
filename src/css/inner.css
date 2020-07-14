@@ -154,17 +154,16 @@
 
 .b-filter {
   display: flex;
-  justify-content: space-between;
   position: relative;
   padding: 22px 72px;
   background-image: url(../img/background.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  /*height: 180px;*/
 }
 
 .b-filter_list {
+  width: 100%;
   display: flex;
   position: relative;
   color: var(--basic-white);
@@ -282,6 +281,14 @@
   margin-top: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -344,4 +351,13 @@ input[type='checkbox'].visually-hidden {
 
 .filter-button-up {
   padding-top: 30px;
+}
+
+.number {
+  background-color: transparent;
+  border-color: white;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
 }
